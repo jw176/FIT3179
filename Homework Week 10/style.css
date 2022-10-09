@@ -1,0 +1,13 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #14110F;
+}
+
+#vis {
+    display: block;
+    width: min-content;
+    height: min-content;
+    margin: auto;
+    margin-top: 20px;
+}

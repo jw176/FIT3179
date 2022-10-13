@@ -1,0 +1,36 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #14110F;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: white;
+    font-family: sans-serif;
+}
+
+.vis {
+    display: block !important;
+    width: min-content;
+    height: min-content;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.title-section {
+    width: 60%;
+    margin: 15% auto;
+    text-align: center;
+}
+
+.two-col-section {
+    width: 60%;
+    margin: 5% auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+}
+
+.col {
+    text-align: left;
+}

@@ -1,0 +1,127 @@
+[
+    {
+      "name": "Angular.js",
+      "have_used": 0.09292745327609384,
+      "want_to_use": 0.060123151641299166
+    },
+    {
+      "name": "Node.js",
+      "have_used": 0.49512163392740993,
+      "want_to_use": 0.45418672217163175
+    },
+    {
+      "name": "Deno",
+      "have_used": 0.018949741988638826,
+      "want_to_use": 0.08059060751918824
+    },
+    {
+      "name": "Express",
+      "have_used": 0.25157191795672346,
+      "want_to_use": 0.20235462469103682
+    },
+    {
+      "name": "Phoenix",
+      "have_used": 0.023177659251550235,
+      "want_to_use": 0.040371189454056634
+    },
+    {
+      "name": "Ruby on Rails",
+      "have_used": 0.06038333116517063,
+      "want_to_use": 0.07094228350895451
+    },
+    {
+      "name": "React.js",
+      "have_used": 0.4514765187979706,
+      "want_to_use": 0.475044447335328
+    },
+    {
+      "name": "Django",
+      "have_used": 0.15151120940115345,
+      "want_to_use": 0.15610771432288278
+    },
+    {
+      "name": "Flask",
+      "have_used": 0.14949481809114956,
+      "want_to_use": 0.1178830059407658
+    },
+    {
+      "name": "Angular",
+      "have_used": 0.21356402584449938,
+      "want_to_use": 0.1821690299640085
+    },
+    {
+      "name": "Symfony",
+      "have_used": 0.03802957373921339,
+      "want_to_use": 0.03106977147565153
+    },
+    {
+      "name": "jQuery",
+      "have_used": 0.29875113828541694,
+      "want_to_use": 0.12872381943541045
+    },
+    {
+      "name": "Gatsby",
+      "have_used": 0.03787780235028836,
+      "want_to_use": 0.03401847274619488
+    },
+    {
+      "name": "Vue.js",
+      "have_used": 0.20153072286544382,
+      "want_to_use": 0.27461948744633796
+    },
+    {
+      "name": "Laravel",
+      "have_used": 0.10138328780191666,
+      "want_to_use": 0.08256363557521357
+    },
+    {
+      "name": "Svelte",
+      "have_used": 0.05073500715493691,
+      "want_to_use": 0.14615584753479902
+    },
+    {
+      "name": "FastAPI",
+      "have_used": 0.063483803824639,
+      "want_to_use": 0.09910671696804128
+    },
+    {
+      "name": "ASP.NET Core ",
+      "have_used": 0.1989722908807077,
+      "want_to_use": 0.19283639044273881
+    },
+    {
+      "name": "Play Framework",
+      "have_used": 0.007892112224101296,
+      "want_to_use": 0.008043883613026322
+    },
+    {
+      "name": "ASP.NET",
+      "have_used": 0.15623780408481852,
+      "want_to_use": 0.08343090065478513
+    },
+    {
+      "name": "Fastify",
+      "have_used": 0.02014223147304974,
+      "want_to_use": 0.03148172238844803
+    },
+    {
+      "name": "Blazor",
+      "have_used": 0.04724426520966133,
+      "want_to_use": 0.0841247127184424
+    },
+    {
+      "name": "Drupal",
+      "have_used": 0.023199340878539525,
+      "want_to_use": 0.013008976193573565
+    },
+    {
+      "name": "Next.js",
+      "have_used": 0.14704479424135988,
+      "want_to_use": 0.22436147608516543
+    },
+    {
+      "name": "Nuxt.js",
+      "have_used": 0.04227917262911409,
+      "want_to_use": 0.0824985906942457
+    }
+  ]

@@ -6,33 +6,23 @@ const spec1 = {
     hconcat: [
         {
             title: {
-                text: ["How do developers work in 2022?"],
+                text: ["Work type per country"],
                 color: "white",
-                fontSize: 30,
+                fontSize: 16,
+                font: "mononoki",
                 subtitlePadding: 10,
-                subtitle: [
-                    "Based on the Stack Overflow 2022 Developer Survey",
-                    "",
-                ],
+                subtitle: [""],
                 subtitleColor: "grey",
                 subtitleFontSize: 16,
             },
-            height: 550,
-            width: 780,
+            height: 500,
+            width: 650,
             data: {
                 url: "hex_map.json",
             },
             encoding: {
                 y: { field: "Row", type: "ordinal", axis: null },
                 x: { field: "Col", type: "ordinal", axis: null },
-                stroke: {
-                    condition: {
-                        param: "highlight",
-                        empty: false,
-                        value: "black",
-                    },
-                    value: null,
-                },
             },
             layer: [
                 {
@@ -49,10 +39,11 @@ const spec1 = {
                     ],
                     mark: {
                         type: "rect",
-                        height: 23,
-                        width: 23,
+                        height: 20,
+                        width: 20,
                         // color: "#ff00ff",
-                        cornerRadius: 4,
+                        cornerRadius: 3,
+                        strokeWidth: 3,
                     },
                     encoding: {
                         color: {
@@ -60,18 +51,18 @@ const spec1 = {
                             type: "Nominal",
                             legend: {
                                 labelColor: "white",
-                                labelFontSize: 14,
+                                labelFontSize: 12,
                                 symbolSize: 300,
                                 rowPadding: 10,
-                                title: [
-                                    "Most common developer",
-                                    "work type",
-                                ],
-                                titleLineHeight: 24,
-                                titleFontSize: 18,
+                                title: ["Most common", "developer work type"],
+                                titleLineHeight: 16,
+                                titleFontSize: 12,
                                 titleLimit: 300,
                                 titleColor: "white",
                                 titlePadding: 10,
+                                orient: "none",
+                                legendX: -20,
+                                legendY: 380,
                             },
                             scale: {
                                 domain: [
@@ -109,6 +100,14 @@ const spec1 = {
                                 format: ",",
                             },
                         ],
+                        stroke: {
+                            condition: {
+                                param: "highlight",
+                                empty: false,
+                                value: "#fc0905",
+                            },
+                            value: null,
+                        },
                     },
                     config: {
                         scale: {
@@ -127,24 +126,103 @@ const spec1 = {
                         type: "text",
                         color: "#14110F",
                         fontSize: 8,
+                        font: "sans-serif"
                     },
                     encoding: {
                         text: { field: "Code", type: "nominal" },
                     },
                 },
+                {
+                    data: {
+                        values: [
+                            {
+                                name: "North America",
+                                Row: 1,
+                                Col: 2,
+                            },
+                            {
+                                name: ["Cental", "America"],
+                                Row: 8,
+                                Col: 2,
+                            },
+                            {
+                                name: "Caribbean",
+                                Row: 4,
+                                Col: 6,
+                            },
+                            {
+                                name: "South America",
+                                Row: 15,
+                                Col: 3,
+                            },
+                            {
+                                name: "Europe",
+                                Row: 4,
+                                Col: 14,
+                            },
+                            {
+                                name: "Africa",
+                                Row: 19,
+                                Col: 13,
+                            },
+                            {
+                                name: ["Western", "Asia"],
+                                Row: 13,
+                                Col: 20,
+                            },
+                            {
+                                name: "Central Asia",
+                                Row: 5,
+                                Col: 22,
+                            },
+                            {
+                                name: ["Southern", "Asia"],
+                                Row: 12,
+                                Col: 23,
+                            },
+                            {
+                                name: "Eastern Asia",
+                                Row: 6,
+                                Col: 28,
+                            },
+                            {
+                                name: ["South East", "Asia"],
+                                Row: 10,
+                                Col: 28,
+                            },
+                            {
+                                name: "Oceania",
+                                Row: 21,
+                                Col: 26,
+                            },
+                        ],
+                    },
+                    mark: {
+                        type: "text",
+                        color: "#b5dde5",
+                        align: "left",
+                        dx: -8,
+                        fontSize: 10
+                    },
+                    encoding: {
+                        text: { field: "name", type: "nominal" },
+                        // x: { field: "col", type: "quantitative" },
+                        // y: { field: "row", type: "quantitative" },
+                    },
+                },
             ],
         },
         {
-            height: 250,
+            height: 270,
             width: 200,
             title: {
                 text: ["Work type breakdown"],
                 color: "white",
-                fontSize: 20,
+                fontSize: 16,
                 subtitlePadding: 10,
-                subtitle: ["Click on a country to see its breakdown", ""],
+                subtitle: ["Click on a country to", "see its breakdown"],
                 subtitleColor: "grey",
-                subtitleFontSize: 16,
+                subtitleFontSize: 14,
             },
             transform: [
                 {
@@ -159,8 +237,8 @@ const spec1 = {
                     mark: {
                         type: "arc",
                         innerRadius: 0,
-                        outerRadius: 80,
-                        stroke: "#14110f",
+                        outerRadius: 70,
+                        stroke: "#04202b",
                         strokeWidth: 1,
                     },
                     encoding: {
@@ -178,10 +256,10 @@ const spec1 = {
                                 title: "Work type",
                             },
                         ],
-                    }
+                    },
                 },
                 {
-                    mark: { type: "text", outerRadius: 100 },
+                    mark: { type: "text", outerRadius: 85 },
                     encoding: {
                         text: {
                             field: "developers",
@@ -196,11 +274,11 @@ const spec1 = {
                         align: "center",
                         baseline: "bottom",
                         x: 100,
-                        y: 20,
+                        y: 30,
                         stroke: "white",
                         color: "white",
                         fill: "white",
-                        fontSize: 16
+                        fontSize: 16,
                     },
                     encoding: {
                         text: {
@@ -227,9 +305,11 @@ const spec1 = {
             },
         },
     ],
+    resolve: { legend: { color: "independent" } },
     config: {
-        background: "#14110F",
+        background: "transparent",
         view: { stroke: "transparent" },
+        font: "mononoki"
     },
 };
 vegaEmbed("#remote_work_vis", spec1, { mode: "vega-lite" })

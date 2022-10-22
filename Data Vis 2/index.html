@@ -1,51 +1,251 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Software Development in 2022</title>
+
         <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
         <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
         <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.8"></script>
-        <link rel="stylesheet" href="style.css" />
+
+        <link rel="stylesheet" href="/css/font_imports.css" />
+        <link rel="stylesheet" href="/css/style.css" />
     </head>
     <body>
         <div class="title-section">
             <h1>Software Development in 2022</h1>
-            <h2>An Analysis of the Stack Overflow Survey 2022</h2>
-        </div>
-        
-        <div class="vis" id="remote_work_vis"></div>
-        <div class="two-col-section">
-            <div class="col">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <div class="col">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
+            <h5>A visualisation by Jack Whelan</h5>
         </div>
 
-        <div class="vis" id="languages_vis"></div>
-        <div class="two-col-section">
-            <div class="col">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <div class="col">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-        </div>
+        <section class="about">
+            <h5>Data</h5>
+            <p>
+                The data presented in this visualisation is from the Stack
+                Overflow Developer Survey 2022. The survey results and an
+                analysis by Stack Overflow can be found
+                <a href="https://survey.stackoverflow.co/2022/" target="_blank"
+                    >here</a
+                >.
+            </p>
+        </section>
 
+        <section>
+            <h4>Demographics</h4>
+            <div class="two-col">
+                <div class="col">
+                    <div id="ethnicity_vis"></div>
+                    <p>
+                        The Stack Overflow Developer Survey saw over
+                        <em>70,000</em> developers participate from over
+                        <em>170</em> countries. This provides an excellent
+                        opportunity to explore and understand the complexities
+                        of the developer community.
+                        <br />
+                        <br />
+                        If we examine the diversity of ethnicity, we can see
+                        that the most commonly reported ethnicity was
+                        "Multiracial" (which includes those that selected
+                        multiple options), with <em>20,036</em> developers,
+                        making up <em>28.84%</em> of the respondents.
+                    </p>
+                </div>
+                <div class="col">
+                    <div id="gender_vis"></div>
+                    <p>
+                        Taking a look at the range of genders amongst the
+                        developer community, we can see that men make up the
+                        overwhelming majority of developers, with
+                        <em>64,607</em> participants or
+                        <em>91.18%</em> identifying themselves as a Man.
+                        <br />
+                        <br />
+                        <em>3,399</em> developers (<em>4.80%</em>) identified
+                        themselves as a Woman.
+                        <br />
+                        <br />
+                        <em>1,172</em> developers (<em>1.65%</em>) Preferred not
+                        to say.
+                        <br />
+                        <br />
+                        And <em>704</em> developers (<em>0.99%</em>) identified
+                        themselves as Non-binary, genderqueer, or gender
+                        non-conforming.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-        <div class="vis" id="webframe_vis"></div>
-        <div class="two-col-section">
-            <div class="col">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <section>
+            <h4>Work Conditions</h4>
+            <div class="vis" id="remote_work_vis"></div>
+            <div class="two-col">
+                <div class="col">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit
+                        anim id est laborum.
+                    </p>
+                </div>
+                <div class="col">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit
+                        anim id est laborum.
+                    </p>
+                </div>
             </div>
-            <div class="col">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
+
+        <section>
+            <h4>Programming Languages</h4>
+            <div id="classification_vis"></div>
+            <div class="two-col">
+                <div class="col">
+                    <p>
+                        There are many features of a programming language that
+                        separate it from others. In order to analyse and compare
+                        different programming languages more reasonably, it
+                        helps to separate them into distinct groups that share
+                        some common features and characteristics.
+                    </p>
+                </div>
+                <div class="col">
+                    <p>
+                        Such mutually exclusive categorisations are hard to
+                        establish, however for the purpose of this
+                        visualisation, we will make the distinction between
+                        assembled languages (<em>Assembly</em>), languages that
+                        feature a major compilation step (<em
+                            >Compiled Languages</em
+                        >), languages that are interpreted at runtime (<em
+                            >Interpreted Languages</em
+                        >), and <em>Markup Languages</em>.
+                    </p>
+                </div>
             </div>
-        </div>
-        
+            <div class="tabs-container">
+                <div class="tabs-labels">
+                    <div class="tab-label">Compiled Languages</div>
+                    <div class="tab-label">Interpreted Languages</div>
+                </div>
+                <div class="tabs-content">
+                    <div class="tab">
+                        <div id="compiled_lollipop_vis"></div>
+                        <div class="two-col">
+                            <div class="col">
+                                <h5>Most wanted languages</h5>
+
+                                <em><h5>F#</h5></em>
+                                <p>
+                                    For every <em>1</em> developer that has
+                                    worked with <em>F#</em>, there are
+                                    <em>2.83</em> developers that want to.
+                                </p>
+
+                                <em><h5>Solidity</h5></em>
+                                <p>
+                                    For every <em>1</em> developer that has
+                                    worked with <em>Solidity</em>, there are
+                                    <em>2.69</em> developers that want to.
+                                </p>
+
+                                <em><h5>Rust</h5></em>
+                                <p>
+                                    For every <em>1</em> developer that has
+                                    worked with <em>Rust</em>, there are
+                                    <em>2.67</em> developers that want to.
+                                </p>
+                            </div>
+                            <div class="col least-wanted">
+                                <h5>Least wanted languages</h5>
+
+                                <em><h5>VBA</h5></em>
+                                <p>
+                                    For every <em>1</em> developer that has
+                                    worked with <em>VBA</em>, there are
+                                    <em>0.31</em> developers that want to.
+                                </p>
+
+                                <em><h5>Groovy</h5></em>
+                                <p>
+                                    For every <em>1</em> developer that has
+                                    worked with <em>Groovy</em>, there are
+                                    <em>0.47</em> developers that want to.
+                                </p>
+
+                                <em><h5>Objective-C</h5></em>
+                                <p>
+                                    For every <em>1</em> developer that has
+                                    worked with <em>Objective-C</em>, there are
+                                    <em>0.56</em> developers that want to.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <div id="interpreted_lollipop_vis"></div>
+                        <div class="two-col">
+                            <div class="col">
+                                <h5>Most wanted languages</h5>
+
+                                <em><h5>APL</h5></em>
+                                <p>
+                                    For every <em>1</em> developer that has
+                                    worked with <em>APL</em>, there are
+                                    <em>1.41</em> developers that want to.
+                                </p>
+
+                                <em><h5>LISP</h5></em>
+                                <p>
+                                    For every <em>1</em> developer that has
+                                    worked with <em>LISP</em>, there are
+                                    <em>1.40</em> developers that want to.
+                                </p>
+                            </div>
+                            <div class="col least-wanted">
+                                <h5>Least wanted languages</h5>
+
+                                <em><h5>MATLAB</h5></em>
+                                <p>
+                                    For every <em>1</em> developer that has
+                                    worked with <em>MATLAB</em>, there are
+                                    <em>0.39</em> developers that want to.
+                                    <br>
+                                    <br>
+                                    Perhaps it's the 1-based indexing that developers aren't a fan of.
+                                </p>
+
+                                <em><h5>PHP</h5></em>
+                                <p>
+                                    For every <em>1</em> developer that has
+                                    worked with <em>PHP</em>, there are
+                                    <em>0.53</em> developers that want to.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <script src="js/remote_work.js"></script>
         <script src="js/languages.js"></script>
-        <script src="js/webframe.js"></script>
+        <script src="js/gender.js"></script>
+        <script src="js/ethnicity.js"></script>
+        <script src="js/classification.js"></script>
+        <script src="js/tabs.js"></script>
+        <script src="js/compiled_lollipop.js"></script>
+        <script src="js/interpreted_lollipop.js"></script>
     </body>
 </html>

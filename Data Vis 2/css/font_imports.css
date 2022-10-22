@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'JetBrainsMonoNL Nerd Font';
+    src: url('/fonts/JetBrainsMonoNLNerdFontComplete-Bold.woff2') format('woff2'),
+        url('/fonts/JetBrainsMonoNLNerdFontComplete-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'JetBrainsMonoNL Nerd Font';
+    src: url('/fonts/JetBrainsMonoNLNerdFontComplete-Italic.woff2') format('woff2'),
+        url('/fonts/JetBrainsMonoNLNerdFontComplete-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'JetBrainsMonoNL Nerd Font';
+    src: url('/fonts/JetBrainsMonoNLNerdFontComplete-Regular.woff2') format('woff2'),
+        url('/fonts/JetBrainsMonoNLNerdFontComplete-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'JetBrainsMonoNL Nerd Font';
+    src: url('/fonts/JetBrainsMonoNLNerdFontComplete-Thin.woff2') format('woff2'),
+        url('/fonts/JetBrainsMonoNLNerdFontComplete-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'JetBrainsMono Nerd Font';
+    src: url('/fonts/JetBrainsMonoNerdFontComplete-SemiBold.woff2') format('woff2'),
+        url('/fonts/JetBrainsMonoNerdFontComplete-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'mononoki';
+    src: url('/fonts/mononoki-Regular.woff2') format('woff2'),
+        url('/fonts/mononoki-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'mononoki';
+    src: url('/fonts/mononoki-Bold.woff2') format('woff2'),
+        url('/fonts/mononoki-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
